@@ -1,0 +1,50 @@
+<html>
+
+<style>
+    #m{
+        background-color: aquamarine;
+    }
+    #h{
+        background-color: rgb(129, 127, 255);
+    }
+    #a{
+        background-color: rgb(255, 127, 249);
+    }
+    #k{
+        background-color: rgb(210, 241, 95);
+    }
+
+    div
+    {
+        
+    }
+
+</style>
+<body>
+
+<p>Select the Name of Student.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option id='m' value="Muzammil">Muzammil</option>
+  <option id="h" value="Huzaifa">Huzaifa</option>
+  <option id='a' value="Ali">Ali</option>
+  <option id='k' value="Khan">Khan</option>
+</select>
+
+<p>Name you has selected is.</p>
+<div>
+    <p id="demo"></p>
+</div>
+
+<script>
+    function myFunction() 
+    {
+      var x = document.getElementById("mySelect").value;
+      document.getElementById("demo").innerHTML = "You selected: " + x;
+      document.getElementById("demo").style.color = "blue";
+    }
+    </script>
+
+</body>
+</html>
+
